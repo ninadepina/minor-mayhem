@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Minor Mayhem</title>
 
-		<!-- <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" /> -->
-		<link rel="stylesheet" href="styles/style.css" type="text/css" />
-		<script src="./scripts/app.js" type="module"></script>
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 	</head>
-	<body></body>
+	<body>
+		<main>
+			<header>
+				<p>Beoordeel de Web Development Minor!</p>
+			</header>
+
+			<section class="content">
+				<header>
+					<h1>Minor Mayhem:</h1>
+					<p>Beoordeel de Web Design & Development Minor!</p>
+				</header>
+				<hr />
+				<section>
+					<form id="info_form" action="./dashboard.html" method="GET">
+						<fieldset>
+							<div>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									class="css-input"
+									placeholder="Voor- en achternaam"
+									autocomplete="off"
+									required />
+								<label for="name">Voor- en achternaam *</label>
+								<p class="error"></p>
+							</div>
+
+							<div>
+								<input
+									type="text"
+									name="email"
+									id="email"
+									class="css-input"
+									placeholder="E-mailadres (bijv. jouwnaam@gmail.com)"
+									autocapitalize="off"
+									pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+									autocomplete="off"
+									required />
+								<label for="email">E-mailadres *</label>
+								<p class="error"></p>
+							</div>
+
+							<div>
+								<input
+									type="text"
+									inputmode="numeric"
+									pattern="^[56]\d{8}$"
+									name="studentnummer"
+									id="studentnummer"
+									class="css-input"
+									placeholder="Studentnummer (9 cijfers, bijv. 500812345)"
+									pattern="^[56]\d{8}$"
+									autocomplete="off"
+									required />
+								<label for="studentnummer">Studentnummer *</label>
+								<p class="error"></p>
+							</div>
+						</fieldset>
+						<hr />
+						<button type="submit">Doorgaan!</button>
+					</form>
+				</section>
+			</section>
+		</main>
+		<script src="./scripts/validateUser.js"></script>
+	</body>
 </html>
