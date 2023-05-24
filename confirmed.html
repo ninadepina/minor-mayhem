@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Minor Mayhem</title>
+
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+		<script src="./scripts/fun.js" type="module"></script>
+	</head>
+	<body>
+		<main>
+			<header>
+				<p>Beoordeel de Web Design & Development Minor!</p>
+			</header>
+
+			<section class="content z">
+				<header>
+					<h1>Super bedankt!</h1>
+					<p>
+						Hartelijk dank voor het invullen van deze enquête voor de Minor Web Design & Development! Jouw
+						deelname en feedback zijn van onschatbare waarde voor ons. We waarderen de tijd die je hebt
+						genomen om deze enquête in te vullen en we zullen je input gebruiken om de minor te verbeteren
+						en beter aan te laten sluiten op jouw behoeften en interesses. Nogmaals bedankt!
+					</p>
+				</header>
+				<section data-bubble>
+					<div></div>
+				</section>
+				<svg>
+					<defs>
+						<filter id="blob">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+							<feColorMatrix
+								in="blur"
+								mode="matrix"
+								values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+								result="blob"></feColorMatrix>
+							<feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
+						</filter>
+					</defs>
+				</svg>
+			</section>
+		</main>
+	</body>
+</html>
