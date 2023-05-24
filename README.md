@@ -60,6 +60,7 @@ There were several user stories you could pick from. I chose to go with 'Survey 
 ## 🎨 Design
 
 I made a quick design in Figma to get an idea of what I wanted to make. This way, I could get a good grip on the colors I'm going to use and the contrast between those colors.
+![Figma sketch](https://github.com/ninadepina/minor-mayhem/assets/89778503/801dca19-5d0e-4dbb-b020-b76023abd4ac)
 
 ---
 
@@ -143,6 +144,8 @@ The no-preference value indicates that the user has not expressed a preference f
 Ensuring that your website is accessible to all users, including those with visual impairments, is an essential aspect of web design. One crucial consideration is the contrast between the colors used in your design. To address this, I conducted a thorough evaluation of color contrast throughout the website using a contrast checker.
 
 By utilizing a contrast checker, I assessed the color combinations present in various elements of the website, such as text, buttons, and backgrounds. This process allowed me to verify that the color choices adhere to recognized accessibility standards, ensuring that the content remains legible and discernible for individuals with visual challenges.
+
+![color contrast checker](https://github.com/ninadepina/minor-mayhem/assets/89778503/e73b7831-a780-4437-9fda-d50aefedb962)
 
 ### Keyboard navigation
 
