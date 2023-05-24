@@ -16,23 +16,23 @@ There were several user stories you could pick from. I chose to go with 'Survey 
 
 ## 🔧 Core functionality/features
 
-[x] Survey Form: Design and implement a user-friendly survey form where participants can provide their feedback on the minor.
+-   [x] Survey Form: Design and implement a user-friendly survey form where participants can provide their feedback on the minor.
 
-[x] Form validation: Validate the form to ensure that all required fields are completed. Provide clear error messages when validation fails.
+-   [x] Form validation: Validate the form to ensure that all required fields are completed. Provide clear error messages when validation fails.
 
-[x] Multiple Answer Options: Include various answer options for the survey questions, allowing participants to choose from a predefined set of responses.
+-   [x] Multiple Answer Options: Include various answer options for the survey questions, allowing participants to choose from a predefined set of responses.
 
-[x] Progress Tracking: Display a clear indication of the participant's progress within the survey, showing which questions have been completed and how many are remaining.
+-   [x] Progress Tracking: Display a clear indication of the participant's progress within the survey, showing which questions have been completed and how many are remaining.
 
-[x] Question Review: Enable participants to review and revise their previously answered questions during the survey.
+-   [x] Question Review: Enable participants to review and revise their previously answered questions during the survey.
 
-[x] Resumable Survey: Allow participants to save their progress and resume the survey later from where they left off, in case they are unable to complete it in one session.
+-   [x] Resumable Survey: Allow participants to save their progress and resume the survey later from where they left off, in case they are unable to complete it in one session.
 
-[x] Functional without JavaScript: The site also works without Javascript and only uses Javascript to enhance the user experience.
+-   [x] Functional without JavaScript: The site also works without Javascript and only uses Javascript to enhance the user experience.
 
-[x] Light and Dark mode: The user can choose between light and dark mode based on their system preferences `prefers-color-scheme`.
+-   [x] Light and Dark mode: The user can choose between light and dark mode based on their system preferences `prefers-color-scheme`.
 
-[x] Accessible: The site is accessible for everyone. It works with a keyboard and screen reader.
+-   [x] Accessible: The site is accessible for everyone. It works with a keyboard and screen reader.
 
 **Survey requirements**
 
