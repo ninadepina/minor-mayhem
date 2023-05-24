@@ -153,17 +153,13 @@ By utilizing a contrast checker, I assessed the color combinations present in va
 1. Clone this repository
 
 ```
-
 $ git clone https://github.com/ninadepina/minor-mayhem.git
-
 ```
 
 2. Open the `index.html` file in your browser or use localhost
 
 ```
-
 http://localhost:5500/
-
 ```
 
 ---
@@ -171,7 +167,3 @@ http://localhost:5500/
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/ninadepina/minor-mayhem/blob/main/LICENSE) file for more details.
-
-```
-
-```
