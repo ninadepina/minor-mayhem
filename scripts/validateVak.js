@@ -1,3 +1,5 @@
+import { supports_html5_storage } from './localStorage.js';
+
 const form = document.querySelector('.enq');
 const mainElement = form.closest('main').className;
 
@@ -78,12 +80,12 @@ function saveAnswers() {
 	const kladblokValue = textarea.value.trim();
 	answers['kladblok'] = kladblokValue;
 
-	localStorage.setItem(mainElement, JSON.stringify(answers));
+	if (supports_html5_storage()) localStorage.setItem(mainElement, JSON.stringify(answers));
 }
 
 function scrollToFirstInvalidFieldset() {
 	const fieldsets = document.querySelectorAll('fieldset');
-	
+
 	for (let i = 0; i < fieldsets.length; i++) {
 		const fieldset = fieldsets[i];
 		const errorElement = fieldset.querySelector('.error');

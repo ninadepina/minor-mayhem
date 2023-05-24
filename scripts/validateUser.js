@@ -1,3 +1,5 @@
+import { supports_html5_storage } from './localStorage.js';
+
 const form = document.querySelector('#info_form');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
@@ -101,7 +103,7 @@ function isFormValid() {
 	answers['email'] = emailInput.value;
 	answers['studentnummer'] = studentnummerInput.value;
 
-	localStorage.setItem('user', JSON.stringify(answers));
+	if (supports_html5_storage()) localStorage.setItem('user', JSON.stringify(answers));
 
 	return isValid;
 }
