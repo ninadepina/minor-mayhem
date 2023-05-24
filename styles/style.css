@@ -564,29 +564,6 @@ a[href='/confirmed.html'].disable:hover {
 	z-index: 2;
 }
 
-@supports (display: grid) {
-	@media only screen and (min-width: 600px) {
-		.courses li > div + div {
-			display: grid;
-			grid-template-columns: 1fr 0.1fr;
-			padding: 1rem 0.875rem;
-		}
-		.courses li > div + div a {
-			order: unset;
-		}
-	}
-	.enq fieldset > legend + div {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: 0.25rem;
-	}
-	@media only screen and (min-width: 600px) {
-		.enq fieldset > legend + div {
-			grid-template-columns: repeat(10, 1fr);
-		}
-	}
-}
-
 [data-bubble] {
 	transform: rotateX(180deg);
 	display: grid;
@@ -638,5 +615,28 @@ a[href='/confirmed.html'].disable:hover {
 	[data-bubble] > div .bubble {
 		animation: bubble-size var(--blob-time, 4s) ease-in infinite var(--blob-delay, 0s),
 			bubble-move var(--blob-time, 4s) ease-in infinite var(--blob-delay, 0s);
+	}
+}
+
+@supports (display: grid) {
+	@media only screen and (min-width: 600px) {
+		.courses li > div + div {
+			display: grid;
+			grid-template-columns: 1fr 0.1fr;
+			padding: 1rem 0.875rem;
+		}
+		.courses li > div + div a {
+			order: unset;
+		}
+	}
+	.enq fieldset > legend + div {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.25rem;
+	}
+	@media only screen and (min-width: 600px) {
+		.enq fieldset > legend + div {
+			grid-template-columns: repeat(10, 1fr);
+		}
 	}
 }
