@@ -59,7 +59,8 @@ There were several user stories you could pick from. I chose to go with 'Survey 
 
 ## 🎨 Design
 
-I made a quick design in Figma to get an idea of what I wanted to make. This way, I could get a good grip on the colors I'm going to use and the contrast between those colors.
+I made a quick design in Figma to get an idea of what I wanted to make. This way, I could get a good grip on the colors I'm going to use and the [contrast](https://github.com/ninadepina/minor-mayhem#color-contrast) between those colors.
+
 ![Figma sketch](https://github.com/ninadepina/minor-mayhem/assets/89778503/801dca19-5d0e-4dbb-b020-b76023abd4ac)
 
 ---
