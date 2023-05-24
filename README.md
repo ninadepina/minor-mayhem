@@ -140,11 +140,31 @@ By utilizing a contrast checker, I assessed the color combinations present in va
 
 ## 🌐 Tested browsers
 
--   [x] Google Chrome
--   [x] Mozilla Firefox
--   [x] Safari Desktop
--   [x] Safari Mobile
--   [x] Samsung Internet
+-   [x] Google Chrome v113.0.5672.126
+-   [x] Google Chrome v115.0.5790.0
+-   [x] Mozilla Firefox v113.0.1
+-   [x] Safari Desktop v16.4
+-   [x] Safari Mobile v16.6
+-   [x] Samsung Internet v20.0.3.10
+-   [x] Flow v6.9.0
+
+### 🔍 Flow v.6.9.0
+
+[Flow](https://www.ekioh.com/flow-browser/) is a new browser that features a completely new multi-threaded rendering engine, distinct from WebKit, Gecko, or Blink. Developed by Ekioh, Flow aims to provide improved performance and rendering capabilities for user interfaces.
+
+During my testing of the browser, I encountered difficulties due to the lack of documentation. It was challenging to determine the browser's supported features and limitations. This became evident when I tested my survey site and encountered various issues:
+
+-   `gap` was not supported.
+-   There's no `cursor: pointer;` support.
+-   There seems to be an issue with `width` on anchor tags and buttons.
+-   The `:hover` state doesn't work on anchor tags and buttons.
+-   Couldn't tab through the page.
+-   Couldn't check a radio button.
+-   `prefers-reduced-motion` was not supported.
+-   `border-radius` on `span` elements that don't have a `display` property set doesn't work.
+-   `::placeholder` property not supported.
+-   Can't select text.
+-   Javascript doesn't work.
 
 ---
 
