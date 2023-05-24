@@ -12,6 +12,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
 		<script src="./scripts/confirm.js" type="module"></script>
 	</head>
 	<body>
@@ -31,7 +32,6 @@
 				<section>
 					<header>
 						<h2>Overzicht van al jouw antwoorden</h2>
-						<noscript>I.v.m. het ontbreken/niet laden van het javascript bestand, klopt de voortgang van elk vak helaas niet..</noscript>
 					</header>
 
 					<ul class="courses">
@@ -308,7 +308,7 @@
 					</ul>
 				</section>
 
-				<a href="/confirmed.html">Antwoorden versturen</a>
+				<a href="/confirmed.html" class="disable" data-text="Je hebt nog niet alles ingevuld..">Antwoorden versturen</a>
 			</section>
 		</main>
 	</body>
