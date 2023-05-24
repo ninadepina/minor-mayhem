@@ -265,11 +265,16 @@ button[type='submit']:active {
 
 .content section > header .progress_bar {
 	position: relative;
-	width: 20rem;
+	width: 10rem;
 	height: 1.4rem;
 	overflow: hidden;
 	background-color: #ddd;
 	border-radius: var(--border-radius);
+}
+@media only screen and (min-width: 600px) {
+	.content section > header .progress_bar {
+		width: 20rem;
+	}
 }
 .content section > header .progress_bar > div {
 	position: absolute;
