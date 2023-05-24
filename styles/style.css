@@ -345,6 +345,14 @@ button[type='submit']:active {
 	flex-direction: column;
 	gap: 0.5rem;
 }
+.courses li > div + div {
+	display: flex;
+	flex-direction: column;
+}
+.courses li > div + div a {
+	order: -1;
+	margin: 0.875rem auto 0.875rem 0;
+}
 
 .answers > a {
 	margin: 0 auto auto 0;
@@ -381,6 +389,7 @@ button[type='submit']:active {
 	background-color: var(--bg-color);
 }
 .vak_info span {
+	display: inline-block;
 	margin-right: 0.25rem;
 }
 
@@ -491,6 +500,11 @@ a[href='./dashboard.html']:active:after {
 a[href='/confirmed.html'] {
 	position: relative;
 }
+@media only screen and (max-width: 599px) {
+	a[href='/confirmed.html'] {
+		margin-top: 2rem;
+	}
+}
 a[href='/confirmed.html']:focus-visible {
 	color: var(--bg-color) !important;
 	border-color: var(--accent-color) !important;
@@ -539,10 +553,15 @@ a[href='/confirmed.html'].disable:hover {
 }
 
 @supports (display: grid) {
-	.courses li > div + div {
-		display: grid;
-		grid-template-columns: 1fr 0.1fr;
-		padding: 1rem 0.875rem;
+	@media only screen and (min-width: 600px) {
+		.courses li > div + div {
+			display: grid;
+			grid-template-columns: 1fr 0.1fr;
+			padding: 1rem 0.875rem;
+		}
+		.courses li > div + div a {
+			order: unset;
+		}
 	}
 	.enq fieldset > legend + div {
 		display: grid;
