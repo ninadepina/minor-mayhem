@@ -16,15 +16,23 @@ There were several user stories you could pick from. I chose to go with 'Survey 
 
 ## 🔧 Core functionality/features
 
-1. Survey Form: Design and implement a user-friendly survey form where participants can provide their feedback on the minor.
+[x] Survey Form: Design and implement a user-friendly survey form where participants can provide their feedback on the minor.
 
-2. Multiple Answer Options: Include various answer options for the survey questions, allowing participants to choose from a predefined set of responses.
+[x] Form validation: Validate the form to ensure that all required fields are completed. Provide clear error messages when validation fails.
 
-3. Progress Tracking: Display a clear indication of the participant's progress within the survey, showing which questions have been completed and how many are remaining.
+[x] Multiple Answer Options: Include various answer options for the survey questions, allowing participants to choose from a predefined set of responses.
 
-4. Question Review: Enable participants to review and revise their previously answered questions during the survey.
+[x] Progress Tracking: Display a clear indication of the participant's progress within the survey, showing which questions have been completed and how many are remaining.
 
-5. Resumable Survey: Allow participants to save their progress and resume the survey later from where they left off, in case they are unable to complete it in one session.
+[x] Question Review: Enable participants to review and revise their previously answered questions during the survey.
+
+[x] Resumable Survey: Allow participants to save their progress and resume the survey later from where they left off, in case they are unable to complete it in one session.
+
+[x] Functional without JavaScript: The site also works without Javascript and only uses Javascript to enhance the user experience.
+
+[x] Light and Dark mode: The user can choose between light and dark mode based on their system preferences `prefers-color-scheme`.
+
+[x] Accessible: The site is accessible for everyone. It works with a keyboard and screen reader.
 
 **Survey requirements**
 
@@ -135,6 +143,16 @@ The no-preference value indicates that the user has not expressed a preference f
 Ensuring that your website is accessible to all users, including those with visual impairments, is an essential aspect of web design. One crucial consideration is the contrast between the colors used in your design. To address this, I conducted a thorough evaluation of color contrast throughout the website using a contrast checker.
 
 By utilizing a contrast checker, I assessed the color combinations present in various elements of the website, such as text, buttons, and backgrounds. This process allowed me to verify that the color choices adhere to recognized accessibility standards, ensuring that the content remains legible and discernible for individuals with visual challenges.
+
+### Keyboard navigation
+
+I tested the website using a keyboard to ensure that all interactive elements are accessible and usable. I navigated through the website using the Tab key and the arrow keys. I also tested the website using the Tab key and the arrow keys in combination with the Shift key to ensure that the focus order is logical and intuitive.
+
+The main issue I encountered was that different browsers have different ways to go through a website. You think every browser has navigation with the Tab key standardly enabled, but that's not the case. For example, in Safari and Firefox, you have to enable this feature manually. Safari does have a different standard shortcut for this, `option + Tab`.
+
+### Screen reader
+
+I tested the website using a screen reader to ensure that all interactive elements are accessible and usable. I used VoiceOver on macOS. I made sure that the order was logical and that labels where correctly connected to their corresponding inputs (my input are either in the label or the label contains a `for` attribute).
 
 ---
 
