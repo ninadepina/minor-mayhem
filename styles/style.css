@@ -257,7 +257,26 @@ button[type='submit']:active {
 }
 
 .content section > header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 1.725rem;
+}
+
+.content section > header .progress_bar {
+	position: relative;
+	width: 20rem;
+	height: 1.4rem;
+	overflow: hidden;
+	background-color: #ddd;
+	border-radius: var(--border-radius);
+}
+.content section > header .progress_bar > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 1.6rem;
+	background: var(--bg-linear-gradient);
 }
 
 .courses {
@@ -316,11 +335,6 @@ button[type='submit']:active {
 .courses li > a h2 {
 	font-size: 1rem;
 }
-.courses li > div + div {
-	display: grid;
-	grid-template-columns: 1fr 0.1fr;
-	padding: 1rem 0.875rem;
-}
 .courses li > div + div ul {
 	display: flex;
 	flex-direction: column;
@@ -377,16 +391,6 @@ button[type='submit']:active {
 	border: 1px solid var(--accent-color);
 }
 
-.enq fieldset > legend + div {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 0.25rem;
-}
-@media only screen and (min-width: 600px) {
-	.enq fieldset > legend + div {
-		grid-template-columns: repeat(10, 1fr);
-	}
-}
 .enq fieldset > div:last-of-type {
 	display: flex;
 	flex-direction: row;
@@ -470,6 +474,29 @@ a[href='./dashboard.html']:active:after {
 	transform: scale(1);
 }
 
+a[href='/confirmed.html'] {
+	position: relative;
+}
+a[href='/confirmed.html'].disable {
+	color: #2a2a2a;
+	text-decoration: line-through;
+	border-color: #2a2a2a;
+	cursor: auto;
+	user-select: none;
+}
+a[href='/confirmed.html'].disable::before {
+	content: attr(data-text);
+	position: absolute;
+	top: -1.5rem;
+	left: 0;
+	font-size: 0.84rem;
+	font-weight: 300;
+	text-transform: none;
+}
+a[href='/confirmed.html'].disable:hover {
+	background-color: transparent;
+}
+
 .css-input:invalid {
 	border: 1px solid var(--error-color) !important;
 }
@@ -486,4 +513,80 @@ a[href='./dashboard.html']:active:after {
 }
 .error_margin {
 	margin-bottom: -0.8rem;
+}
+
+.z header {
+	z-index: 2;
+}
+
+@supports (display: grid) {
+	.courses li > div + div {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr;
+		padding: 1rem 0.875rem;
+	}
+	.enq fieldset > legend + div {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 0.25rem;
+	}
+	@media only screen and (min-width: 600px) {
+		.enq fieldset > legend + div {
+			grid-template-columns: repeat(10, 1fr);
+		}
+	}
+}
+
+[data-bubble] {
+	transform: rotateX(180deg);
+	display: grid;
+	position: relative;
+}
+[data-bubble] > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 88%;
+	height: 1rem;
+	margin: auto;
+	background: var(--bg-color);
+	filter: url(#blob);
+}
+[data-bubble] > div .bubble {
+	position: absolute;
+	left: var(--blob-position, 50%);
+	background: var(--bg-color);
+	border-radius: 100%;
+	transform: translate(-50%, 50%);
+}
+[data-bubble] + svg {
+	position: fixed;
+	top: 100vh;
+}
+@keyframes bubble-size {
+	0%,
+	75% {
+		width: var(--blob-size, 4rem);
+		height: var(--blob-size, 4rem);
+	}
+	100% {
+		width: 0rem;
+		height: 0rem;
+	}
+}
+@keyframes bubble-move {
+	0% {
+		bottom: -4rem;
+	}
+	100% {
+		bottom: var(--blob-distance, 10rem);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	[data-bubble] > div .bubble {
+		animation: bubble-size var(--blob-time, 4s) ease-in infinite var(--blob-delay, 0s),
+			bubble-move var(--blob-time, 4s) ease-in infinite var(--blob-delay, 0s);
+	}
 }

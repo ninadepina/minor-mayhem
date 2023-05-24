@@ -11,3 +11,16 @@ links.forEach((link) => {
 		progress.textContent = 'Voltooid';
 	}
 });
+
+const progressItems = document.querySelectorAll('.progress');
+let completedCount = 0;
+
+progressItems.forEach((item) => {
+	if (item.textContent.trim() === 'Voltooid') {
+		completedCount++;
+	}
+});
+
+const progressValue = completedCount * 10;
+document.querySelector('.progress_bar').setAttribute('data-progress', progressValue);
+document.querySelector('.progress_bar > div').style.width = `${progressValue}%`;
