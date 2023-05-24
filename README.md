@@ -190,6 +190,12 @@ During my testing of the browser, I encountered difficulties due to the lack of 
 
 ---
 
+## 🎉 Demo
+
+[minor-mayhem.vercel.app](https://minor-mayhem.vercel.app/)
+
+---
+
 ## 📦 Installation
 
 1. Clone this repository
