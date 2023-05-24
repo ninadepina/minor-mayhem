@@ -18,3 +18,16 @@ containers.forEach((container) => {
 		container.querySelector('.kladblok').textContent = storageObj.kladblok;
 	}
 });
+
+const anchorTag = document.querySelector('a[href="/confirmed.html"]');
+const elements = document.querySelectorAll('.schaal_lesstof, .schaal_uitleg, .schaal_inzicht');
+
+const allTextContentsNotEmpty = Array.from(elements).every((element) => element.textContent.trim() !== '');
+
+if (!allTextContentsNotEmpty) {
+	anchorTag.addEventListener('click', function (e) {
+		e.preventDefault();
+	});
+} else {
+	anchorTag.classList.remove('disable');
+}
