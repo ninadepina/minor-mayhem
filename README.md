@@ -188,7 +188,7 @@ During my testing of the browser, I encountered difficulties due to the lack of 
 -   The `:hover` state doesn't work on anchor tags and buttons.
 -   Couldn't tab through the page.
 -   Couldn't check a radio button.
--   There's no `prefers-reduced-motion` support.
+-   There's no `@media`(e.g. `prefers-reduced-motion` and `prefers-color-scheme: dark`) support.
 -   `border-radius` on `span` elements that don't have a `display` property set don't work.
 -   There's no `::placeholder` property support.
 -   Can't select text.
