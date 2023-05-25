@@ -438,6 +438,11 @@ button[type='submit']:active {
 	width: fit-content;
 }
 
+.enq fieldset > legend + div {
+	display: flex;
+	flex-direction: row;
+}
+
 .enq fieldset input {
 	opacity: 0;
 	position: absolute;
