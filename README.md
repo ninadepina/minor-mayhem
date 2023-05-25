@@ -182,15 +182,15 @@ I tested the website using a screen reader to ensure that all interactive elemen
 
 During my testing of the browser, I encountered difficulties due to the lack of documentation. It was challenging to determine the browser's supported features and limitations. This became evident when I tested my survey site and encountered various issues:
 
--   `gap` was not supported.
+-   There's no `gap` support.
 -   There's no `cursor: pointer;` support.
 -   There seems to be an issue with `width` on anchor tags and buttons.
 -   The `:hover` state doesn't work on anchor tags and buttons.
 -   Couldn't tab through the page.
 -   Couldn't check a radio button.
--   `prefers-reduced-motion` was not supported.
--   `border-radius` on `span` elements that don't have a `display` property set doesn't work.
--   `::placeholder` property not supported.
+-   There's no `prefers-reduced-motion` support.
+-   `border-radius` on `span` elements that don't have a `display` property set don't work.
+-   There's no `::placeholder` property support.
 -   Can't select text.
 -   Javascript doesn't work.
 
