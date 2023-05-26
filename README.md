@@ -173,7 +173,7 @@ I tested the website using a screen reader to ensure that all interactive elemen
 **Mobile**
 
 -   [x] Google Chrome v113.0.5672.121
--   [x] Samsung Internet v20.0.0.65
+-   [x] Samsung Internet v20.0.6.5
 -   [x] Safari Mobile v16.6
 
 ### 🔍 Flow v.6.9.0
@@ -187,12 +187,15 @@ During my testing of the browser, I encountered difficulties due to the lack of 
 -   There seems to be an issue with `width` on anchor tags and buttons.
 -   The `:hover` state doesn't work on anchor tags and buttons.
 -   Couldn't tab through the page.
--   Couldn't check a radio button.
--   There's no `@media`(e.g. `prefers-reduced-motion` and `prefers-color-scheme: dark`) support.
+-   Custom styling on `:checked` doesn't work.
+-   There's no `@media`(e.g. `prefers-reduced-motion` and `prefers-color-scheme`) support.
 -   `border-radius` on `span` elements that don't have a `display` property set don't work.
 -   There's no `::placeholder` property support.
+-   `placeholder=""` doesn't show on textareas.
+-   `appearance` doesn't work.
 -   Can't select text.
--   Javascript doesn't work.
+-   Some Javascript modules don't work.
+
 
 ---
 
