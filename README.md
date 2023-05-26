@@ -196,6 +196,18 @@ During my testing of the browser, I encountered difficulties due to the lack of 
 -   Can't select text.
 -   Some Javascript modules don't work.
 
+---
+
+## 🗄️ Backend notes
+
+The purpose of this documentation is to outline the backend functionality that would be implemented to support this survey project. As the current implementation doesn't contain any backend, this documentation will provide an overview of the backend features that would typically be included in a complete survey application.
+
+-   **Web server:** handles incoming requests from clients and routes them to the appropriate backend components. It serves the HTML, CSS, and JavaScript files required by the client-side application.
+-   **Database:** stores the survey data. The database would be accessed by the web server to retrieve and store data.
+-   **Data validation:** ensures that the data entered by the user is valid and meets the specified requirements.
+-   **Data storage:** stores the data entered by the user in the database.
+-   **Authentication and authorization:** ensures that the user is authenticated and authorized to access the survey. Also ery helpful for managing user sessions.
+-   **Error handling:** handle and communicate errors to the client-side application. This includes returning appropriate HTTP status codes, error messages, and logging errors for troubleshooting.
 
 ---
 
