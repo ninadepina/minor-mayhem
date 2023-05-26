@@ -188,7 +188,7 @@ During my testing of the browser, I encountered difficulties due to the lack of 
 -   The `:hover` state doesn't work on anchor tags and buttons.
 -   Couldn't tab through the page.
 -   Custom styling on `:checked` doesn't work.
--   There's no `@media`(e.g. `prefers-reduced-motion` and `prefers-color-scheme`) support.
+-   There's no `@media` (e.g. `prefers-reduced-motion` and `prefers-color-scheme`) support.
 -   `border-radius` on `span` elements that don't have a `display` property set don't work.
 -   There's no `::placeholder` property support.
 -   `placeholder=""` doesn't show on textareas.
